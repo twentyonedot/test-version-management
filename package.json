@@ -14,7 +14,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "commitBuild": "git add -A && git commit -m \"${npm_config_version}\" && git push origin develop",
+    "commitBuild": "npm version:major && git add -A && git commit -m \"${npm_config_version}\" && git push origin develop",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
